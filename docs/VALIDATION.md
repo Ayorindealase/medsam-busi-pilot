@@ -23,6 +23,6 @@ The local test environment used Python 3.11, PyTorch 2.0.1, NumPy 1.26.4, scikit
 
 ## Not yet verified
 
-No BUSI images or official pretrained MedSAM weights were available in this workspace. No real 300-image manifest, pretrained inference scores, fine-tuned BUSI scores, training-time estimate, GPU memory measurement or executed Colab run is claimed. Random-weight smoke results are structural checks only. The GitHub Actions workflow is prepared but has not run remotely.
+No BUSI images or official pretrained MedSAM weights were available in this workspace. No real 300-image manifest, pretrained inference scores, fine-tuned BUSI scores, training-time estimate, GPU memory measurement or executed Colab run is claimed. Random-weight smoke results are structural checks only. The first GitHub Actions run failed during upstream MedSAM installation. The dependency now pins revision `b9db486e77bf9a2c9c11cc061c63f54110d520b6`, before the custom installer that attempted a conflicting nested MONAI/NumPy installation, and pins MONAI 1.4.0. Upstream comparison confirmed only `setup.py` differs between these MedSAM revisions; architecture files are unchanged. See the repository Actions page for the corrected run result.
 
 The first real run must verify source archive contents, inspect the manifest and exclusions, preview training image/mask alignment, complete embedding caching on the selected GPU, train/select using validation only, and run the fixed test comparison once. Review exported provenance and results before team reporting.

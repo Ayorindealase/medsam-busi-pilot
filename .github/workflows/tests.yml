@@ -12,4 +12,5 @@ jobs:
           python-version: '3.11'
       - run: pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu
       - run: pip install -r requirements-colab.txt
+      - run: python -m pip check
       - run: python -m pytest -q

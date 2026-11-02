@@ -2,6 +2,10 @@
 
 A small-scale reproduction of the **box-prompted MedSAM workflow**, comparing pretrained MedSAM with decoder-only adaptation on BUSI. This is not a reproduction of the paper's large-scale training or reported performance. No BUSI performance results are claimed yet.
 
+## Test on your own computer
+
+Follow the [team testing guide](docs/TEAM_TESTING_GUIDE.md) for Windows, macOS and Linux setup, software-only checks, the full BUSI workflow, troubleshooting and reporting results.
+
 ## Start in Colab
 
 Open the [pilot notebook in Colab](https://colab.research.google.com/github/Ayorindealase/medsam-busi-pilot/blob/main/notebooks/BUSI_MedSAM_Pilot.ipynb). Select a GPU runtime (a T4 is the intended starting point). Run the notebook from the top; its setup cell clones this repository into `/content/medsam-busi-pilot` when needed. A source ZIP upload fallback is also available. The notebook includes this setup option, Drive mounting, file checks, tests, preparation, caching, training, paired evaluation, previews, and result export.

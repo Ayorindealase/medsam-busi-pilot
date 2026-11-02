@@ -4,5 +4,7 @@ Pillow==11.1.0
 scikit-image==0.25.2
 pytest==8.3.5
 nbformat==5.10.4
-medsam @ git+https://github.com/bowang-lab/MedSAM.git@d71e8a1a99ad751840a22a7fa3ecfb4166fb1488
+# Upstream runtime dependency; avoid upgrades to the selected torch pair.
+monai==1.4.0
+medsam @ git+https://github.com/bowang-lab/MedSAM.git@b9db486e77bf9a2c9c11cc061c63f54110d520b6
 -e .
