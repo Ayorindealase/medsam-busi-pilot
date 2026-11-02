@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medsam-busi-pilot"
+version = "0.1.0"
+description = "Reproducible 300-image BUSI MedSAM decoder adaptation pilot"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<2", "Pillow>=9.5", "scikit-image>=0.22,<0.26", "torch>=2.0,<3", "torchvision>=0.15,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "nbformat>=5"]
+
+[project.scripts]
+medsam-busi = "medsam_busi.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["medsam_busi*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: official SAM architecture integration (no pretrained weights)"]
