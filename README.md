@@ -2,6 +2,10 @@
 
 A small-scale reproduction of the **box-prompted MedSAM workflow**, comparing pretrained MedSAM with decoder-only adaptation on BUSI. This is not a reproduction of the paper's large-scale training or reported performance. No BUSI performance results are claimed yet.
 
+## What this project does
+
+Read the [project overview](docs/PROJECT_OVERVIEW.md) for a first-person explanation of what I built, the experiment design, completed checks, and the work still needed before reporting BUSI results.
+
 ## Test on your own computer
 
 Follow the [team testing guide](docs/TEAM_TESTING_GUIDE.md) for Windows, macOS and Linux setup, software-only checks, the full BUSI workflow, troubleshooting and reporting results.
