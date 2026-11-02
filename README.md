@@ -4,7 +4,7 @@ A small-scale reproduction of the **box-prompted MedSAM workflow**, comparing pr
 
 ## Start in Colab
 
-Open `notebooks/BUSI_MedSAM_Pilot.ipynb` using Colab's **Upload notebook** option. Select a GPU runtime (a T4 is the intended starting point). Until GitHub publication, upload the supplied source ZIP to Colab, extract it into `/content/medsam-busi-pilot`, and run the notebook from the top. The notebook includes this setup option, Drive mounting, file checks, tests, preparation, caching, training, paired evaluation, previews, and result export.
+Open the [pilot notebook in Colab](https://colab.research.google.com/github/Ayorindealase/medsam-busi-pilot/blob/main/notebooks/BUSI_MedSAM_Pilot.ipynb). Select a GPU runtime (a T4 is the intended starting point). Run the notebook from the top; its setup cell clones this repository into `/content/medsam-busi-pilot` when needed. A source ZIP upload fallback is also available. The notebook includes this setup option, Drive mounting, file checks, tests, preparation, caching, training, paired evaluation, previews, and result export.
 
 Obtain the original BUSI dataset through the [dataset article](https://pmc.ncbi.nlm.nih.gov/articles/PMC6906728/) and its linked author source, observing the source's usage terms. Extract it yourself to a folder named `Dataset_BUSI_with_GT`; do not use BUSI_WHU or a pre-split derivative. Obtain `medsam_vit_b.pth` from the checkpoint link in the [official MedSAM README](https://github.com/bowang-lab/MedSAM#get-started) (navigate to Get Started). Place both in Google Drive and update the notebook paths. No credentials, data, or weights are included in this repository. Only load checkpoints from trusted sources.
 
